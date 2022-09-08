@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main() {
+  int t1=0,t2=1,num=0,n;
+  scanf("%d", &n);
+  num= t1 + t2;
+
+  while (num<= n) 
+  {
+if(num==n)
+  {
+      printf("yes");
+      break;
+  }
+    t1 = t2;
+    t2 = num;
+    num= t1 + t2;
+  
+  }
+if(num!=n)
+    {
+        printf("NO");
+        
+    }
+
+  return 0;
+}
